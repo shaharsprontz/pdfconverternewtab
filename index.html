@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Tab Quick Pdf Converter</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="icon" type="image/ico" href="images/icon.png" />
+  <!-- <script src="/Base/js/base.js"></script> -->
+  <!-- <script src="/Base/js/js.cookie.min.js"></script> -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    var userId = null;
+    if (Cookies && Cookies.get('userId')) {
+      userId = Cookies.get('userId');
+    } else {
+      window._userIdConst = generateUUID();
+      userId = _userIdConst;
+      Cookies.set('userId', userId, {
+        expires: 30
+      });
+    }
+
+    var queryParamObj = {}
+    for (const param of params) {
+      if (getConfirmParamFromUrl(param[0]) !== "") {
+        queryParamObj[param[0]] = getConfirmParamFromUrl(param[0]);
+      }
+    }
+    sendStatsData(65, 1, 1, 'Landing page load', queryParamObj);
+  </script>
+
+</head>
+
+<body>
+  <nav>
+    <div class="containerClp">
+      <div class="logoClp">
+        <a href="index.html"><img src="images/icon.png" alt="" />
+          <span>New Tab Quick Pdf Converter</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-main bg_clr">
+    <div class="first_sec">
+      <div class="step_section">
+        <div class="steps">
+          <ul>
+            <li><b>Step 1:</b> Click button to Install</li>
+            <li>
+              <b>Step 2:</b> You will be redirected to the Chrome Web Store
+            </li>
+            <li><b>Step 3:</b> Just click on add to Chrome button</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="arrow_forward">
+        <img class="animation" src="images/arrow-forward.svg" />
+      </div>
+
+      <div class="left_heading">
+        <a href="https://chrome.google.com/webstore/detail/new-tab-quick-pdf-convert/dahlapnnflgogjncfekgjdfopcafiigb" target="_blank" class="download_btn">Install <img src="" alt="" /></a>
+        <small>By clicking the button above and installing the product,<br />
+          I accept and agree to abide by the
+          <a href="terms.html">Terms</a> and
+          <a href="privacy.html">Privacy Policy</a>.</small>
+      </div>
+    </div>
+    <div class="support_txt">
+      <div class="col-up">
+        <div class="col">
+          <img src="images/Graphic.png" alt="" class="converter-img" />
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div>
+            <h3 class="overview">
+              Overview of the New Tab Quick Pdf Converter New Tab Extension
+            </h3>
+            <p class="description">
+              If you have Internet access, you can use our New Tab Quick Pdf Converter
+              extension online free, so you can convert any images into PDF
+              anytime you need to.
+            </p>
+            <a href="https://chrome.google.com/webstore/detail/new-tab-quick-pdf-convert/dahlapnnflgogjncfekgjdfopcafiigb" target="_blank" class="download_btn">Install Now</a>
+          </div>
+          <img src="images/icon.png" class="feature-img" />
+        </div>
+      </div>
+    </div>
+    <div class="contact-section">
+      <div class="contact-us">
+        <h3>For Contacting Us</h3>
+        <p>You Can Mail Us On:</p>
+        <a href="mailto:contact@viewbix.com" class="mail-link">
+          contact@viewbix.com
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <a href="terms.html">Terms & Conditions</a>
+      <a href="privacy.html"> Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script>
+
+    $('.download_btn').click(function () {
+      if (!Cookies.get('isDownload')) {
+        Cookies.set('isDownload', 'true', {
+          expires: 30
+        });
+      }
+
+      sendStatsData(65, 1, 2, 'Press download to redirect on chrome web store', queryParamObj)
+    });
+
+    ready(() => {
+      // let userId = null;
+
+      if (Cookies && Cookies.get('userId')) {
+        userId = Cookies.get('userId');
+      } else if (_userIdConst) {
+        Cookies.set('userId', userId, {
+          expires: 30
+        });
+      } else {
+        userId = generateUUID();
+        Cookies.set('userId', userId, {
+          expires: 30
+        });
+      }
+
+      for (let key in queryParamObj) {
+        Cookies.set(key, queryParamObj[key], {
+          expires: 30
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+nav {
+    box-shadow: 0px 3px 6px #00000017;
+    padding: 10px 0px;
+    background-color: #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .steps b {
+    font-size: 18px;
+  }
+  
+  .red {
+    color: #dc0000;
+  }
+  
+  .blue {
+    color: #60afff;
+  }
+  
+  nav .containerClp {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  body,
+  h1,
+  h2,
+  p,
+  figure,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    min-width: 752px;
+    color: #2b2b2b;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav .logoClp img {
+    width: 40px;
+    margin-right: 6px;
+  }
+  
+  nav .logoClp a {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  nav .containerClp .download_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  nav .containerClp .download_btn img {
+    margin-right: 10px;
+  }
+  
+  .container-main {
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+  }
+  
+  .first_sec {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .first_sec .arrow_forward img {
+    margin-top: 14px;
+    animation: 4s animate infinite linear;
+  }
+  
+  .left_heading {
+    width: 370px;
+    margin-left: 24px;
+  }
+  
+  .left_heading .download_btn {
+    width: 300px;
+    height: 50px;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    font-size: 28px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 12px;
+  }
+  
+  .left_heading small {
+    font-size: 13px;
+    padding-top: 12px;
+    display: block;
+    color: grey;
+  }
+  
+  .support_txt {
+    margin-top: 50px;
+  }
+  
+  .col-up {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .support_txt .col {
+    width: 23%;
+    text-align: center;
+    padding: 12px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .support_txt .col p {
+    line-height: 19px;
+    padding-top: 14px;
+    font-size: 14px;
+  }
+  
+  .step_section {
+    flex: 1;
+  }
+  
+  .step_section .steps ul li {
+    list-style: none;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    margin: 3px 0;
+  }
+  
+  footer {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    color: #b7b7b7;
+    background-color: #f0f0f0;
+  }
+  
+  footer div {
+    padding: 20px 0;
+  }
+  
+  footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px;
+  }
+  
+  .description {
+    font-size: 15px;
+  }
+  
+  .overview {
+    font-size: 20px;
+  }
+  
+  .sub-header {
+    text-align: center;
+    background: #eeeeee;
+    color: black;
+    padding: 50px 0;
+    margin-bottom: 40px;
+  }
+  
+  .sub-header h1 {
+    margin-bottom: 5px;
+  }
+  
+  .text {
+    line-height: 26px;
+    font-size: 14px;
+  }
+  
+  .text .middle {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .text p {
+    margin-bottom: 10px;
+  }
+  
+  .text p strong:nth-of-type(1) {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .text h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  .text h2 {
+    font-size: 15px;
+  }
+  
+  @keyframes animate {
+    0% {
+      margin-right: 00px;
+    }
+  
+    30% {
+      margin-right: 10px;
+    }
+  
+    80% {
+      margin-right: 10px;
+    }
+  
+    95% {
+      margin-right: 00px;
+    }
+  }
+  
+  a.arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    margin: 26px auto 0;
+    line-height: 38px;
+    animation: 2s upDown infinite linear;
+    position: relative;
+  }
+  
+  .converter-img {
+    width: 350px;
+    height: 180px;
+  }
+  
+  @keyframes upDown {
+    0% {
+      top: 0px;
+    }
+  
+    30% {
+      top: 10px;
+    }
+  
+    80% {
+      top: 10px;
+    }
+  
+    100% {
+      top: 0px;
+    }
+  }
+  
+  /* Feature section */
+  .features {
+    font-size: 14px;
+    margin-top: 70px;
+  }
+  
+  .feature-img {
+    width: auto;
+    height: 150px;
+    padding-top: 40px;
+  }
+  
+  .features .feature {
+    padding: 40px 40px;
+    background-color: #f0f0f0;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .features .feature:nth-child(even) {
+    background: #fff;
+  }
+  
+  .features .feature>div {
+    max-width: 400px;
+  }
+  
+  .feature .download_btn {
+    background: green;
+    padding: 14px 50px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  /* Contact Section */
+  
+  .contact-section {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    margin-top: 30px;
+  }
+  
+  .contact-section h3 {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  
+  .contact-us {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .contact-section p {
+    font-size: 15px;
+    font-weight: 550;
+    margin-bottom: 5px;
+  }
+  
+  .contact-section a {
+    font-size: 14px;
+    color: rgb(99 101 99 / 92%);
+    text-decoration: underline;
+  }
+  
+  .suport {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /*Thank you & Uninstall */
+  .thank-you {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 236px);
+    /* color:#fff; */
+  }
+  
+  .thank-you img {
+    align-self: center;
+  }
+  
+  /* uninstall page */
+  .uninstall-section{
+      min-height: calc(100vh - 188px);
+  }
+  .uninstall-form{
+          max-width: 800px;
+      background: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      font-size: 14px;
+          line-height: 30px;
+  }
+  .uninstall-form p{
+      margin-bottom:10px;
+  }
